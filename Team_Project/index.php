@@ -6,7 +6,7 @@
     <body>
     <div>
         <form action="index.php" method="post">
-             <b>Name:</b> <input type="text" name="name">
+             <b>Recipe Name:</b> <input type="text" name="name">
              <br> </br>
              <b>Author</b> <input type="text" name="author">
              <br> </br>
