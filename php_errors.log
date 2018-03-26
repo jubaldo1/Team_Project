@@ -15,3 +15,7 @@
 [26-Mar-2018 06:08:52 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php') in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
 [26-Mar-2018 06:09:00 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
 [26-Mar-2018 06:09:00 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php') in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
+[26-Mar-2018 06:31:42 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
+[26-Mar-2018 06:31:42 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php') in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
+[26-Mar-2018 06:31:48 UTC] PHP Warning:  include(inc/functions.php): failed to open stream: No such file or directory in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
+[26-Mar-2018 06:31:48 UTC] PHP Warning:  include(): Failed opening 'inc/functions.php' for inclusion (include_path='.:/usr/share/php') in /home/ubuntu/workspace/Team_Project/Team_Project/index.php on line 22
