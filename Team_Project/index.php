@@ -38,10 +38,11 @@
     if(isset($_POST['itemName'])){
         // Create associative array for item properties
         $newItem = array();
-        $newItem['name'] = $_POST['itemName'];
-        $newItem['price'] = $_POST['itemPrice'];
-        $newItem['img'] = $_POST['itemImg'];
-        $newItem['id'] = $_POST['itemId'];
+        // $newItem['name'] = $_POST['itemName'];
+        $newItem['name'] = $_POST['name'];
+        //$newItem['price'] = $_POST['itemPrice'];
+        //$newItem['img'] = $_POST['itemImg'];
+        //$newItem['id'] = $_POST['itemId'];
         
         // Check to see if other items with this id are in the array
         // If so, this item isn't new. Only update quantity
