@@ -5,39 +5,21 @@
     </head>
     <body>
     <div>
-        <form action="index.html" method="post">
-             <b>Name:</b> <input type="text" name="name">
-             <br> </br>
-             <b>Author</b> <input type="text" name="author_id">
-             <br> </br>
-                <b>Type:</b> <input type="text" name="type">
-                <br> </br>
-                <b>Availability:</b>
-             <input type="submit" name="Submit">
+        <form action="index.php" method="post">
+            <b>Recipe Name:</b> <input type="text" name="name">
+            <br> </br>
+            <b>Author</b> <input type="text" name="author">
+            <br> </br>
+            <b>Type:</b> <input type="text" name="type">
+            <br> </br>
+            <b>Availability:</b>
+            <input type="submit" name="Submit">
         </form>
         
     </div>
     
     <?php
     include 'inc/functions.php';
-    
-    function getDataBaseconnection($opt){
-    
-    $host='localhost';
-    $dbname=$opt;
-    $username='jubaldo';
-    $password='';
-    $dbConn = new PDO("mysql:host=$host;dbname=$dbname",$username,$password);
-    
-    
-    
-    
-    $dbConn -> setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
-    
-    
-    
-    return $dbConn;
-    
     
     // Start the session in any php file where you will be using sessions
     session_start();
@@ -59,9 +41,9 @@
         // Create associative array for item properties
         $newItem = array();
         $newItem['name'] = $_POST['itemName'];
-        $newItem['price'] = $_POST['itemPrice'];
-        $newItem['img'] = $_POST['itemImg'];
-        $newItem['id'] = $_POST['itemId'];
+        //$newItem['price'] = $_POST['itemPrice'];
+        //$newItem['img'] = $_POST['itemImg'];
+        //$newItem['id'] = $_POST['itemId'];
         
         // Check to see if other items with this id are in the array
         // If so, this item isn't new. Only update quantity
