@@ -5,14 +5,14 @@
     </head>
     <body>
     <div>
-        <form action="index.html" method="post">
+        <form action="index.php" method="post">
              <b>Name:</b> <input type="text" name="name">
              <br> </br>
-             <b>Author</b> <input type="text" name="author_id">
+             <b>Author</b> <input type="text" name="author">
              <br> </br>
-                <b>Type:</b> <input type="text" name="type">
-                <br> </br>
-                <b>Availability:</b>
+             <b>Type:</b> <input type="text" name="type">
+             <br> </br>
+             <b>Availability:</b>
              <input type="submit" name="Submit">
         </form>
         
@@ -21,7 +21,7 @@
     <?php
     include 'inc/functions.php';
     
-    // Start the session in any php file where you will be using sessions
+    // session starts
     session_start();
     
     // Create an array in the Session to hold our cart items
@@ -31,8 +31,6 @@
     
      // Checks to see if the search form has been submitted
     if (isset ($_GET['query'])) {
-        // Get access to our API function
-        //include 'wmapi.php';
         $items = getProducts($_GET['query']);
     }
     
