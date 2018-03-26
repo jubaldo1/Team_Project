@@ -12,7 +12,7 @@
     //var_dump($hasConnUrl);
     
     $host = $hasConnUrl ? $connParts['host'] : getenv('IP');
-    $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'tech_checkout';
+    $dbname = $hasConnUrl ? ltrim($connParts['path'],'/') : 'Recipes';
     $username = $hasConnUrl ? $connParts['user'] : getenv('C9_USER');
     $password = $hasConnUrl ? $connParts['pass'] : '';
 
